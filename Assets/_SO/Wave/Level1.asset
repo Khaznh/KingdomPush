@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3df571593b29e54e859b98230003c00, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  levelName: Level 1
+  startTimer: 5
+  delayBetweenWaves: 30
+  waves:
+  - enemysInWave:
+    - {fileID: 1503519080337938626, guid: 057df5e8b2fa0934e9974b8bec1fac2b, type: 3}
+    - {fileID: 1503519080337938626, guid: 057df5e8b2fa0934e9974b8bec1fac2b, type: 3}
+    delayInSpawn: 1.5
+    spawnPointID: 0
+    pathWayID: 0
+  - enemysInWave:
+    - {fileID: 1503519080337938626, guid: 057df5e8b2fa0934e9974b8bec1fac2b, type: 3}
+    - {fileID: 1503519080337938626, guid: 057df5e8b2fa0934e9974b8bec1fac2b, type: 3}
+    - {fileID: 1503519080337938626, guid: 057df5e8b2fa0934e9974b8bec1fac2b, type: 3}
+    delayInSpawn: 1.5
+    spawnPointID: 0
+    pathWayID: 0
+  coinSpawnSoon: 50
