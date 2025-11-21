@@ -15,7 +15,7 @@ public class TowerRecharge : State
     {
         base.UpdateLogic();
 
-        if (TimeInState() > ((TowerEntity)entity).stats.attackRate)
+        if (TimeInState() > ((TowerEntity)entity).stats.levels[((TowerEntity)entity).currentLevel].attackRate)
         {
             fsm.ChangeState(((TowerEntity)entity).towerIdle);
         }

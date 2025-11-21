@@ -333,9 +333,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: HideLastPanel
+      - m_Target: {fileID: 2441008127942688967}
+        m_TargetAssemblyTypeName: SettingsPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 5641755187128925897}
   - component: {fileID: 3960633797880754887}
   - component: {fileID: 7069726333368464152}
-  - component: {fileID: 559315104564629863}
+  - component: {fileID: 2441008127942688967}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &559315104564629863
+--- !u!114 &2441008127942688967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7510332627410156816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72baf57d504633d43910d0f5df733d97, type: 3}
+  m_Script: {fileID: 11500000, guid: df8e4dbe54a1b1844af0e50f2767401d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panelID: SettingsPanel

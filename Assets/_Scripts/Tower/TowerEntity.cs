@@ -17,6 +17,8 @@ public class TowerEntity : Entity
 
     public List<GameObject> enemyInRange;
 
+    public int currentLevel = 0;
+
     protected override void Awake()
     {
         pedestalAnimator = transform.Find("Pedestal").GetComponent<Animator>();
@@ -35,7 +37,7 @@ public class TowerEntity : Entity
 
     private void SetUpData()
     {
-        circleCollider.radius = stats.attackRange;
+        circleCollider.radius = stats.levels[currentLevel].attackRange;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

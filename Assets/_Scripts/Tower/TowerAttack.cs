@@ -22,8 +22,8 @@ public class TowerAttack : State
         arrow.transform.position = ((TowerEntity)entity).unitAnimator.transform.position;
 
         arrow.GetComponent<ArrowPorjectile>().target = ((TowerEntity)entity).enemyInRange[0].transform;
-        arrow.GetComponent<ArrowPorjectile>().critChange = ((TowerEntity)entity).stats.critChange;
-        arrow.GetComponent<ArrowPorjectile>().dame = ((TowerEntity)entity).stats.damage;
+        arrow.GetComponent<ArrowPorjectile>().critChange = ((TowerEntity)entity).stats.levels[((TowerEntity)entity).currentLevel].critChange;
+        arrow.GetComponent<ArrowPorjectile>().dame = ((TowerEntity)entity).stats.levels[((TowerEntity)entity).currentLevel].damage;
         arrow.GetComponent<ArrowPorjectile>().ResetProjectile();
     }
 }

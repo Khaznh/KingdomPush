@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74185896d4b044f4eb7a81fbd4ad8d2b, type: 3}
   m_Name: Range
   m_EditorClassIdentifier: 
-  attackRange: 2
-  damage: 1
-  attackRate: 1
-  critChange: 25
+  levels:
+  - attackRange: 2
+    damage: 1
+    attackRate: 0.5
+    critChange: 25
+    upgradeFee: 100
+  - attackRange: 3
+    damage: 2
+    attackRate: 0.25
+    critChange: 50
+    upgradeFee: 200
+  startCost: 75

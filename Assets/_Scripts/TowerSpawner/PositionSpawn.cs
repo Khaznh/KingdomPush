@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PositionSpawn : MonoBehaviour
+public class PositionSpawn : MonoBehaviour, IPointerClickHandler
 {
-    public void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        TowerSpawner.Instance.ShowMenu(transform);
+        MouseLogic.Instance.ChangeMouseVar(MouseVar.SpawnerTower, this.transform);
     }
 }
