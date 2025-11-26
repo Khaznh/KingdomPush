@@ -19,6 +19,6 @@ MonoBehaviour:
   moveSpeed: 0.5
   physicalResistance: 1
   explosiveResistance: 1
-  magicResistance: 0.3
+  magicResistance: 0.5
   fireResistance: 0
   poisonResistance: 0

@@ -12,4 +12,5 @@ public class WaveForLevel : ScriptableObject
 
     public List<Wave> waves;
     public int coinSpawnSoon;
+    public int enemyNum;
 }

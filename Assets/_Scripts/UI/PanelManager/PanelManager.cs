@@ -6,7 +6,9 @@ public class PanelManager : Singleton<PanelManager>
 {
     private PoolingObject poolingObject;
 
-    private List<PanelInstance> currentPanels = new();
+    [SerializeField] private List<PanelInstance> currentPanels = new();
+    [SerializeField] private GameObject diePanelPrefabs;
+    [SerializeField] private GameObject winPanelPrefabs;
 
     private void Start()
     {
@@ -15,16 +17,11 @@ public class PanelManager : Singleton<PanelManager>
 
     public void ShowPanel(GameObject panelPrefaps)
     {
-         GameObject panel = poolingObject.GetGameObjectToSpawn(panelPrefaps);
+        GameObject panel = poolingObject.GetGameObjectToSpawn(panelPrefaps);
 
-        if (panel == null)
-        {
-            Debug.Log("Panel not found: " + panelPrefaps.name);
-        } else
-        {
-            currentPanels.Add(new PanelInstance(panel.GetComponent<PanelModel>().panelID, panel));
-            panel.transform.SetParent(this.transform, false);
-        }
+
+        currentPanels.Add(new PanelInstance(panel.GetComponent<PanelModel>().panelID, panel));
+        panel.transform.SetParent(this.transform, false);
     }
 
     public void HideLastPanel()
@@ -35,5 +32,15 @@ public class PanelManager : Singleton<PanelManager>
             poolingObject.ReturnPool(lastPanel.panelInstance);
             currentPanels.RemoveAt(currentPanels.Count - 1);
         }
+    }
+
+    public void ShowDiePanel()
+    {
+        ShowPanel(diePanelPrefabs);
+    }
+
+    public void ShowWinPanel()
+    {
+        ShowPanel(winPanelPrefabs);
     }
 }

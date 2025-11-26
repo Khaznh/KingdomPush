@@ -412,7 +412,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1758214173521965976}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1072677321396631020}
+        m_TargetAssemblyTypeName: PanelSpawnTower, Assembly-CSharp
+        m_MethodName: SpawnBombTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2274727511103540637
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 841866253973795635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1072677321396631020}
+        m_TargetAssemblyTypeName: PanelSpawnTower, Assembly-CSharp
+        m_MethodName: SpawnBombTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2470762574941669362
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,12 +823,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rangeTower: {fileID: 5501362478651854930, guid: 660bc2ca097fd3148906e9d964d5c75c, type: 3}
   solideTower: {fileID: 0}
-  mageTower: {fileID: 0}
-  bombTower: {fileID: 0}
+  mageTower: {fileID: 9032269172691041936, guid: 053033bb4d49bda44b9a73073d8c16eb, type: 3}
+  bombTower: {fileID: 3147027266354610363, guid: a3cce82ca02b5534aa15a3c0be4f57e7, type: 3}
   rangeTowerStats: {fileID: 11400000, guid: cd77f1f0d49952f488ce71cee9e02376, type: 2}
   solideTowerStats: {fileID: 0}
-  mageTowerStats: {fileID: 0}
-  bombTowerStats: {fileID: 0}
+  mageTowerStats: {fileID: 11400000, guid: 7442af26cec2bed41be10fbaf4f0a022, type: 2}
+  bombTowerStats: {fileID: 11400000, guid: 194700cc52cdb634a97714f5da1339de, type: 2}
 --- !u!1 &3653730829011584869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,7 +1583,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2177151336946361015}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1072677321396631020}
+        m_TargetAssemblyTypeName: PanelSpawnTower, Assembly-CSharp
+        m_MethodName: SpawnMageTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8330867161827015855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,4 +1851,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 119589808710669518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1072677321396631020}
+        m_TargetAssemblyTypeName: PanelSpawnTower, Assembly-CSharp
+        m_MethodName: SpawnMageTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

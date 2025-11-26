@@ -30,3 +30,4 @@ MonoBehaviour:
     spawnPointID: 0
     pathWayID: 0
   coinSpawnSoon: 50
+  enemyNum: 5

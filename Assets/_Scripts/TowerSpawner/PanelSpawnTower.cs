@@ -30,8 +30,8 @@ public class PanelSpawnTower : MonoBehaviour
     {
         rangeTowerCostText.text = rangeTowerStats.startCost.ToString();
         //solideTowerCostText.text = solideTowerStats.startCost.ToString();
-        //mageTowerCostText.text = mageTowerStats.startCost.ToString();
-        //bombTowerCostText.text = bombTowerStats.startCost.ToString();
+        mageTowerCostText.text = mageTowerStats.startCost.ToString();
+        bombTowerCostText.text = bombTowerStats.startCost.ToString();
     }
 
     public void SpawnRangeTower()
@@ -42,22 +42,48 @@ public class PanelSpawnTower : MonoBehaviour
         }
 
         Debug.Log("Spawn Range Tower");
-
-        var towerGO = Instantiate(rangeTower, MouseLogic.Instance.transformTower.position, Quaternion.identity);
-        towerGO.transform.parent = MouseLogic.Instance.transformTower;
+        var pos = MouseLogic.Instance.transformTower.position;
+        pos.z = 0;
+        var towerGO = Instantiate(rangeTower, pos, Quaternion.identity);
+        //towerGO.transform.parent = MouseLogic.Instance.transformTower;
 
         MouseLogic.Instance.ChangeMouseVar(MouseVar.None,null);
     }
 
     public void SpawnSolideTower()
     {
+
     }
 
     public void SpawnMageTower()
     {
+        if (MouseLogic.Instance.transformTower == null)
+        {
+            return;
+        }
+
+        Debug.Log("Spawn Mage Tower");
+        var pos = MouseLogic.Instance.transformTower.position;
+        pos.z = 0;
+        var towerGO = Instantiate(mageTower, pos, Quaternion.identity);
+        //towerGO.transform.parent = MouseLogic.Instance.transformTower;
+
+        MouseLogic.Instance.ChangeMouseVar(MouseVar.None, null);
     }
 
     public void SpawnBombTower()
     {
+        if (MouseLogic.Instance.transformTower == null)
+        {
+            return;
+        }
+
+        Debug.Log("Spawn Bomb Tower");
+        var pos = MouseLogic.Instance.transformTower.position;
+        pos.z = 0;
+        var towerGO = Instantiate(bombTower, pos, Quaternion.identity);
+        //towerGO.transform.parent = MouseLogic.Instance.transformTower;
+
+        MouseLogic.Instance.ChangeMouseVar(MouseVar.None, null);
     }
 }

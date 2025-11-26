@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d6e753f5b994648af6537c21de1573, type: 3}
+  m_Name: SolideTowerStats
+  m_EditorClassIdentifier: 
+  levels:
+  - attackRange: 2
+    damage: 1
+    attackRate: 1
+    critChange: 25
+    upgradeFee: 100
+  - attackRange: 3
+    damage: 2
+    attackRate: 1
+    critChange: 50
+    upgradeFee: 100
+  startCost: 100
+  spawnDelayTime: 3
+  solidePrefap: {fileID: 757241784521034752, guid: 49e04dda3f9e8a840a5a8dc052ef76fb, type: 3}

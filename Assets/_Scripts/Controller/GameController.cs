@@ -12,7 +12,9 @@ public class GameController : Singleton<GameController>
     [SerializeField] private TextMeshProUGUI goldText;
     [SerializeField] private TextMeshProUGUI healthText;
     [SerializeField] private TextMeshProUGUI waveText;
-    //[SerializeField] private 
+    [SerializeField] public int enemyDie = 0;
+
+    private bool isGameOver = false;
 
     private void Start()
     {
@@ -29,6 +31,17 @@ public class GameController : Singleton<GameController>
     private void Update()
     {
         DisplayInfomation();
+
+        if (health <= 0)
+        {
+            Debug.Log("Game Over");
+            Lose();
+        }
+
+        if (enemyDie >= wave.enemyNum)
+        {
+            Win();
+        }
     }
 
     private void DisplayInfomation()
@@ -63,5 +76,30 @@ public class GameController : Singleton<GameController>
     public void GainWave()
     {
         waveCurrent++;
+    }
+
+    private void Win()
+    {
+        if (isGameOver) return;
+
+        PanelManager.Instance.ShowWinPanel();
+        isGameOver = true;
+        int star = PlayerPrefs.GetInt("Star", 0);
+
+        if (health == 10)
+        {
+            PlayerPrefs.SetInt("Star", star + 3);
+        } else
+        {
+            PlayerPrefs.SetInt("Star", star + 2);
+        }
+    }
+
+    private void Lose()
+    {
+        if (isGameOver) return;
+
+        PanelManager.Instance.ShowDiePanel();
+        isGameOver = true;
     }
 }

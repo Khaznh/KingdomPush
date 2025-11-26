@@ -19,6 +19,7 @@ public class OrcDieState : State
         if (TimeInState() >= 0.2f)
         {
             PoolingObject.Instance.ReturnPool(((OrcEntity)entity).gameObject);
+            GameController.Instance.enemyDie += 1;
         }
     }
 }

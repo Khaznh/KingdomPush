@@ -426,7 +426,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1430619378047394153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5563560446913965948}
+        m_TargetAssemblyTypeName: PanelModel, Assembly-CSharp
+        m_MethodName: ResetMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3377841540242427984
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,9 +559,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: HideLastPanel
+      - m_Target: {fileID: 5563560446913965948}
+        m_TargetAssemblyTypeName: PanelModel, Assembly-CSharp
+        m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -815,7 +827,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6140698348938477884}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5563560446913965948}
+        m_TargetAssemblyTypeName: PanelModel, Assembly-CSharp
+        m_MethodName: MoveToMap
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MenuScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8917912711173237028
 GameObject:
   m_ObjectHideFlags: 0
